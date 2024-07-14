@@ -44,3 +44,9 @@ where appropriate.
 I usually run iknowthis in a virtual machine, for easier debugging, you can try something like this:
 
 $ while true; do (sleep 1h ; sudo killall -9 iknowthis) & sudo ./iknowthis --dangerous; kill %1; done
+
+
+# Setup notes
+```
+sudo apt-get install -y libmicrohttpd-dev
+```
