@@ -5,7 +5,7 @@
 ##
 
 CFLAGS      =-Wall -Wno-multichar -pipe -O0 -ggdb3 -fno-strict-aliasing `pkg-config --cflags libmicrohttpd,glib-2.0` -std=gnu99
-LDFLAGS     =$(CFLAGS) `pkg-config --libs libmicrohttpd,glib-2.0` -lneo_cs -lneo_cgi -lneo_utl -lz -Wl,-z,now
+LDFLAGS     =$(CFLAGS) `pkg-config --libs libmicrohttpd,glib-2.0` -lz -Wl,-z,now
 CPPFLAGS    =-I. -Itypelib -I/usr/include/ClearSilver -I/usr/local/include/ClearSilver
 ARCH       ?=$(shell uname -m)
 OS         ?=$(shell uname -s)
